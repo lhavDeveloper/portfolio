@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lhavanya Murali</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body onload="init()">
+
+    <!-- FIRST BOX - NAME + SKILLS -->
+    <div class="row">
+    <div class="flipContainer col-12 col-sm-6 flippable first" >
+        <div id="asl" class="flipDiv">
+        <!-- front of the card bearing NAME & WELCOME -->
+        <div class="front">
+        <h1 class="boxHeadings">Lhavanya Murali</h1>
+        <hr class="underlineTitle">
+        <h2 class="subHeading">Welcome to my portfolio!</h2>
+        <span id="tap" class="hidden-sm-up">(Tap)</span>
+        </div>
+        <!-- back of the tag bearing SKILLS -->
+        <div class="back">
+            <h1 class="subHeading">My Skillset</h1>
+            <ul id="skillsContainer">
+                <li class="skills">Java</li>
+                <li class="skills">Javascript</li>
+                <li class="skills">HTML</li>
+                <li class="skills">CSS</li>
+                <li class="skills">Bootstrap</li>
+                <li class="skills">AngularJS</li>
+                <li class="skills">JQuery</li>
+                <li class="skills">REST API</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    <!-- SECOND BOX - ABOUT ME-->
+    <div class="col-12 col-sm-6 second">
+        <div id="aboutContainer" class="dark setHeight">
+            <h2 id="aboutSpan" class="boxHeadings centered">About Me</h2>
+            <span class="hidden-sm-up" style="display: none;">(Tap)</span>
+            <p id="description" class="subHeading">Hi, I'm Lhavanya, a passionate and enthusiastic web developer. I live in Manhattan. I absolutely love creating code that I can feel proud to call my own. The most fascinating thing about developing software is that when I start out with a simple idea, I keep getting interesting new ideas and finally it turns out to be a mindblowing innovation. Feel free to check out my work!</p>
+        </div>
+    </div>
+
+
+
+    <!-- THIRD BOX - QUOTE-->    
+    <div class="col-12 col-sm-6 first">
+    <div id="quotes" class="medium setHeight">
+        <p id="quoteContainer" class="subHeading centered"><i class="fa fa-quote-left"></i><span id="quote" class="red"></span><i class="fa fa-quote-right"></i></p>
+        </div>
+    </div>
+
+    <!-- FOURTH BOX - MY WORK-->
+    <div class="col-12 col-sm-6 second" onclick="redirectPage()">
+    <div id="projects" class="light setHeight">
+    <h1 class="boxHeadings">My Work</h1>
+    <hr class="underlineTitle">
+    <i class="fa fa-laptop icons"></i>
+    </div>
+    </div>
+
+
+        <div class="flipContainer col-12 col-sm-6 first">
+            <div id="contact" class="flipDiv">
+            <div class="front">
+            <div class="boxHeadings">Contact</div>
+            <hr class="underlineTitle">
+            <i class="fa fa-phone icons"></i>
+            </div>
+            <div class="back">
+             <div class="contactBox">
+                <i class="fa fa-volume-control-phone contactIcon"></i>
+                <a class="contactInfo">+19292288367</a>
+             </div>
+             <div class="contactBox">
+                <i class="fa fa-envelope-o contactIcon"></i>
+                <a class="contactInfo">lhavanyamurali@gmail.com</a>
+             </div>
+             <div class="contactBox">
+                <i class="fa fa-skype contactIcon"></i>
+                <a class="contactInfo">lavanya.m7</a>
+             </div>
+            </div>
+    </div>
+    </div>
+
+    <div  class="col-12 col-sm-6 second">
+    <div id="social" class="medium setHeight">
+        <div class="boxHeadings">social media</div>
+        <hr class="underlineTitle">
+        <h4 class="subHeading">You can find out about me at:</h4>
+        <div id="socialMedia">
+            <a class="fa fa-github socialMediaIcons" href="https://github.com/lhavDeveloper"></a>
+            <a class="fa fa-linkedin-square socialMediaIcons" href="https://www.linkedin.com/in/lhavanyamurali/"></a>
+            <a class="fa fa-stack-overflow socialMediaIcons" href="http://stackoverflow.com/users/7692672/lhavcoder"></a>
+            <a class="fa fa-skype socialMediaIcons" href="skype:-lavanya.m7-?chat"></a>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

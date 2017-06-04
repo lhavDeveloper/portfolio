@@ -1,0 +1,299 @@
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans';
+    color: #FFF;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    margin: 0;
+    height: 100%;
+}
+
+.col-12{
+    height: 33.33%;
+    padding: 5px 15px;
+}
+
+.first{
+    padding-right: 7.5px;
+}
+
+.second{
+    padding-left: 7.5px;
+}
+
+.underlineTitle{
+    border-top: 1px solid #FFF;
+    width: 10%;
+}
+
+.front{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back{
+    height: 100%;
+}
+
+.boxHeadings{
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.subHeading{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.centered{
+    margin: auto;
+}
+
+.icons{
+    font-size: 75px;
+}
+
+/* styles for creating FLIP CARDS */
+.flipContainer:hover .flipDiv{
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+perspective: 800px;
+}
+
+.flipDiv{
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+ .front,  .back{
+    width: 100%;
+     -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    position: absolute;  
+    top: 0;
+    left: 0;
+}
+
+.back {
+    -webkit-transform:rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+/* FIRST BOX RELATED STYLES */
+#asl{
+    height: 100%;
+}
+
+#asl > .front{
+    background-color: #5F6EDC;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#asl > .back{
+    padding: 30px 60px;
+    background-color: #4A59C4;
+}
+
+#welcome{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#skillsContainer{
+    padding: 0;
+}
+
+.skills{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 0px;
+    height: 25px;
+    padding:  2px 5px;
+    border-top-left-radius: 12.5px;
+    border-bottom-right-radius: 12.5px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.skills:nth-of-type(1){
+    background-color: #1CC9E4;
+    border: solid 1px #1CC9E4;
+}
+
+.skills:nth-of-type(2){
+    background-color: #FF4A5D;
+    border: solid 1px #FF4A5D;
+}
+
+.skills:nth-of-type(3){
+    background-color: #CDE423;
+    border: solid 1px #CDE423;
+}
+
+.skills:nth-of-type(4){
+    background-color: #F6A623;
+    border: solid 1px #F6A623;
+}
+
+.skills:nth-of-type(5){
+    background-color: #FFBF35;
+    border: solid 1px #FFBF35;
+}
+
+.skills:nth-of-type(6){
+    background-color: #1CC9E4;
+    border: solid 1px #1CC9E4;
+}
+
+.skills:nth-of-type(7){
+    background-color: #BD10E0;
+    border: solid 1px #BD10E0;
+}
+
+.skills:nth-of-type(8){
+    background-color: #9012FE;
+    border: solid 1px #9012FE;
+}
+
+/* second box related styles : ABOUT ME */
+#aboutContainer{
+    height: 100%;
+    background-color: #1CC9E4;
+}
+
+#aboutContainer:hover > #aboutSpan{
+    opacity: 0;
+}
+
+#aboutContainer:hover > #description{
+    opacity: 1;
+}
+
+#aboutSpan{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+#description{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#quotes{
+    height: 100%;
+    background-color: #BD10E0;
+    display: flex;
+}
+
+#quoteContainer{
+    padding: 0 10%;
+}
+
+.fa-quote-left{
+    margin-right: 10px;
+}
+
+.fa-quote-right{
+    margin-left: 10px;
+}
+
+#projects{
+    height: 100%;
+    background-color: #FFBF35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+#projects:hover{
+    background-color: #F6A623;
+}
+
+#contact{
+    height: 100%;
+}
+
+#contact > .front{
+    background-color: #FF4A5D;
+}
+
+#contact > .back{
+    background-color: #D93E4E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.contactIcon{
+    font-size: 35px;
+}
+
+.contactInfo{
+    margin-top: 3px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* styles related to SOCIAL MEDIA section */
+#social{
+    height: 100%;
+    background-color: #CDE423;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediaIcons{
+    font-size: 40px;
+    color: #FFF;
+    border: solid 1px #FFF;
+    padding: 10px 15px;
+    margin: 10px 20px;
+    
+}
+
