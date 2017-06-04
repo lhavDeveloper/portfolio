@@ -15,14 +15,14 @@
 
     <!-- FIRST BOX - NAME + SKILLS -->
     <div class="row">
-    <div class="flipContainer col-12 col-sm-6 flippable first" >
+    <div class="flipContainer col-12 col-md-6 flippable first" >
         <div id="asl" class="flipDiv">
         <!-- front of the card bearing NAME & WELCOME -->
         <div class="front">
         <h1 class="boxHeadings">Lhavanya Murali</h1>
         <hr class="underlineTitle">
         <h2 class="subHeading">Welcome to my portfolio!</h2>
-        <span id="tap" class="hidden-sm-up">(Tap)</span>
+        <h3 id="tap" class="hidden-md-up subHeading tapMessage">(Tap)</h3>
         </div>
         <!-- back of the tag bearing SKILLS -->
         <div class="back">
@@ -42,10 +42,12 @@
     </div>
     
     <!-- SECOND BOX - ABOUT ME-->
-    <div class="col-12 col-sm-6 second">
+    <div class="col-12 col-md-6 second">
         <div id="aboutContainer" class="dark setHeight">
-            <h2 id="aboutSpan" class="boxHeadings centered">About Me</h2>
-            <span class="hidden-sm-up" style="display: none;">(Tap)</span>
+        <div id="aboutSpan">
+            <h2 class="boxHeadings centered">About Me</h2>
+            <h3 class="hidden-md-up subHeading tapMessage">(Tap)</h3>
+        </div>
             <p id="description" class="subHeading">Hi, I'm Lhavanya, a passionate and enthusiastic web developer. I live in Manhattan. I absolutely love creating code that I can feel proud to call my own. The most fascinating thing about developing software is that when I start out with a simple idea, I keep getting interesting new ideas and finally it turns out to be a mindblowing innovation. Feel free to check out my work!</p>
         </div>
     </div>
@@ -53,14 +55,14 @@
 
 
     <!-- THIRD BOX - QUOTE-->    
-    <div class="col-12 col-sm-6 first">
+    <div class="col-12 col-md-6 first">
     <div id="quotes" class="medium setHeight">
         <p id="quoteContainer" class="subHeading centered"><i class="fa fa-quote-left"></i><span id="quote" class="red"></span><i class="fa fa-quote-right"></i></p>
         </div>
     </div>
 
     <!-- FOURTH BOX - MY WORK-->
-    <div class="col-12 col-sm-6 second" onclick="redirectPage()">
+    <div class="col-12 col-md-6 second" onclick="redirectPage()">
     <div id="projects" class="light setHeight">
     <h1 class="boxHeadings">My Work</h1>
     <hr class="underlineTitle">
@@ -69,7 +71,7 @@
     </div>
 
 
-        <div class="flipContainer col-12 col-sm-6 first">
+        <div class="flipContainer col-12 col-md-6 first">
             <div id="contact" class="flipDiv">
             <div class="front">
             <div class="boxHeadings">Contact</div>
@@ -93,7 +95,7 @@
     </div>
     </div>
 
-    <div  class="col-12 col-sm-6 second">
+    <div  class="col-12 col-md-6 second">
     <div id="social" class="medium setHeight">
         <div class="boxHeadings">social media</div>
         <hr class="underlineTitle">
