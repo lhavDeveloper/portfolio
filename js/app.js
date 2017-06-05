@@ -9,6 +9,8 @@ var parent=$('#hobbies');
 var currentWord=1;
 var target=document.getElementById('quote');
 showText(target,quotes,0,50)
+
+$('[data-toggle="tooltip"]').tooltip()
 }
 
 function showText (target, message, index, interval) {  
@@ -16,4 +18,10 @@ function showText (target, message, index, interval) {
     $(target).append(message[index++]);
     setTimeout(function () { showText(target, message, index, interval); }, interval);
   }
+}
+
+function redirectPage(){
+    var loc=window.location+'work.html';
+    window.location.href=loc;
+
 }
