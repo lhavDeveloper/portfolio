@@ -72,6 +72,10 @@ body{
     text-align: center;
 }
 
+.mobileDisplay{
+    display: none;
+}
+
 /* styles for creating FLIP CARDS */
 .flipContainer:hover .flipDiv{
 -webkit-transform: rotateY(180deg);
@@ -130,7 +134,7 @@ perspective: 800px;
     font-weight: 300;
 }
 
-#skillsContainer{
+.skillsContainer{
     padding: 0;
 }
 
@@ -356,6 +360,6 @@ perspective: 800px;
     border-bottom-right-radius: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
+    }
 }
 
